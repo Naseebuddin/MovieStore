@@ -90,12 +90,7 @@ const Home = ({ navigation }) => {
           <FlatList
             showsHorizontalScrollIndicator={false}
             data={data}
-            contentContainerStyle={{
-              marginBottom: moderateScale(28),
-              marginTop: moderateScaleVertical(24),
-              marginLeft: moderateScale(16),
-            }}
-            // columnWrapperStyle={{justifyContent:"space-between"}}
+            contentContainerStyle={stylesHome.contain_Conatiner_STyle}
             horizontal
             renderItem={renderItemNowPlaying}
             keyExtractor={(item) => item.id}

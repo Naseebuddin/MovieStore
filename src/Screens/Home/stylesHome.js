@@ -21,6 +21,11 @@ const stylesHome = StyleSheet.create({
     height: verticalScale(146),
     marginBottom: moderateScaleVertical(18),
   },
+  contain_Conatiner_STyle:{
+    marginBottom: moderateScale(28),
+    marginTop: moderateScaleVertical(24),
+    marginLeft: moderateScale(16),
+  },
   nowPlaying_View: {
     marginRight: moderateScale(24),
   },
@@ -28,5 +33,6 @@ const stylesHome = StyleSheet.create({
     ...commonStyles.fontSize16,
     color: colors.white,
   },
+
 });
 export default stylesHome;
