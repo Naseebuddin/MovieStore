@@ -3,7 +3,10 @@ import {
   FORGOT_PASSWORD,
   LOGIN_API,
   NOW_PLAYING_API,
+  POPULAR_MOVIES_URL,
   SIGNUP_API,
+  TOP_RATED_MOVIES_API,
+  UPCOMING_MOVIES_API_LIST,
 } from "../../config/urls";
 import { apiGet, apiPost, clearUserData, setUserData } from "../../utils/utils";
 import { saveUserData } from "../reducers/auth";
@@ -49,7 +52,20 @@ const discover_Movie = (data) => {
 const now_playing = (data) => {
   return apiGet(NOW_PLAYING_API, data, {});
 };
+const upcoming_Movies_List = (data) => {
+  return apiGet(UPCOMING_MOVIES_API_LIST, data, {});
+};
+const topRated_Movies_List = (data) => {
+  return apiGet(TOP_RATED_MOVIES_API, data, {});
+};
+const popular_Movies_List = (data) =>{
+  return apiGet (POPULAR_MOVIES_URL,data,{})
+}
+//Export All component
 export default {
   discover_Movie,
   now_playing,
+  upcoming_Movies_List,
+  topRated_Movies_List,
+  popular_Movies_List,
 };
